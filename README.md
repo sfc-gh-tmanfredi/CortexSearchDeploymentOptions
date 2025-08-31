@@ -1,2 +1,3 @@
-# CortexSearchDeploymentOptions
-Options for deploying access to Cortex Search via Native App or Snowflake Intelligence
+# Snowflake Native App - Cortex
+
+This is a sample Snowflake Native App that uses Snowflake Cortex to enhance the application workload.

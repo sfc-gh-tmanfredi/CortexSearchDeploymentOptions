@@ -12,13 +12,23 @@ This repo provides the tools for demonstrating deployment options for a UI that 
 
 **Prerequisites**:  You need 2 Snowflake accounts (enterprise edition or higher) to execute this demo effectively
 
-Steps
+## Key Snowflake Features Highlighted
+- Cortex Search
+- Cortex RAG Functions: PARSE_DOCUMENT(), SPLIT_TEXT_RECURSIVE_CHARACTER()
+- Cortex Knowledge Extensions
+- Cortex Agents
+- Snowflake Intelligence
+- Native App Framework
+- Streamlit
 
-# On the PROVIDER account (If Option 1), on CONSUMER account (if option 2)#
+
+# Steps #
+
+## On the PROVIDER account (If Option 1), on CONSUMER account (if option 2)## 
 *** Execute each statement individually.  You will execute different GRANTs at the bottom depending on whether this is a provider or consumer accoutn
 -	Execute the setup script FinDocSearch_SETUP
 
-# Create Native App on Provider (Option 1a/2a) #
+## Create Native App on Provider (Option 1a/2a) ##
 -	Project->App Packages
 -	Click +App Packages
 -	Name the package FinDocSearchNA_package
@@ -35,7 +45,7 @@ Steps
   -	Click Add
 -	Click Done when the message “V1 Patch 0” appears
 
-# On the provider account, create a listing and publish #
+## On the provider account, create a listing and publish ##
 -	Click Data Products->Provider Studio
 -	Click “Listings”
   - Select +Create Listing
@@ -49,19 +59,19 @@ Steps
 -	Under Legal Terms select “Add legal Terms”. Select “Terms of service will be provider offline” 
 -	Click publish.  Listing should now be Live
 
-# Install app on the consumer account #
+## Install app on the consumer account ##
 - Click Data Products->Private Sharing OR Data Sharing->Private Sharing (depending on UI version)
 - Locate listing “DocSearchNA_listing” and click “Get”
 - Under Options, name the database FindDocSearchApp
 - Application will install
 
-# Run native app #
+## Run native app ##
 -	When install is complete, go to Data Products->Apps or Catalog-> apps (depending on UI version) 
 -	Click DocSearchNA_listing
 -	Here you can select a specific model (under advanced options) 
 -	Now type in a question about your documents. You can make the prompt as simple or complex as you like
 
-# Clean up #
+## Clean up ##
 - On Consumer Account
   - Data->Databases OR Catalog->Database Explorer, locate **FINDOCSEARCHAPP**
   - Click … Select Uninstall
